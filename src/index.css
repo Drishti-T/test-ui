@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+  @font-face {
+    font-family: 'Favela';
+    src: url('/fonts/favela-regular.ttf') format('woff2'); 
+    font-weight: normal;
+    font-style: normal;
+    
+  }
+
+  
+body {
+    @apply font-manrope text-white ;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+
+    ;
+    
+  }
+
+
+  .bgcolor-Tufs {
+    background: linear-gradient(to bottom, #1c1826, #0f0e14); 
+
+  }
+
+  /* .bgcolor-Home {
+    background: linear-gradient(to bottom, #21182d, #16121f);
+  }
+
+
+  .border-Home {
+    border: 1px solid;
+    border-radius: 5px;
+    border-image: linear-gradient(to right, #8b5cf6, #ec4899) 1;
+  } */
+  .bgcolor {
+    background: linear-gradient(to bottom, #100e16, #16121f);
+  }
+
+
+  .bgcolor:hover {
+    background: linear-gradient(to bottom, #20182a, #16121f);
+  }
+  
+  .bgColorSelected {
+    background: linear-gradient(to bottom, #20182a, #16121f);
+
+  }
+
+ 
+
+  .bar-btn-outer {
+    padding: 1px;
+    border-radius: 6px;
+    border: 1px solid #2d2d33;
+    height: 42px;
+  }
+  
+  .bar-btn-inner {
+    border-radius: 5px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background: linear-gradient(to bottom, #1f1d25, #191920);
+    transition: background 0.3s, box-shadow 0.3s;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .bar-btn-outer:hover .bar-btn-inner,
+  .bar-btn-outer:focus .bar-btn-inner {
+    background: #b462f6;
+    box-shadow: inset 0 0 12px 2px rgba(255,255,255,0.7);
+  }
+
+.leader-btn-inner {
+  display: flex;
+  align-items: center;
+  border: 1px solid #3f3f46; /* matches border-gray-700 */
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: #19171c;
+  transition: background 0.3s, box-shadow 0.3s, color 0.3s, border-color 0.3s;
+  color: #a3a3a3; /* matches text-gray-400 */
+}
+
+.leader-btn-inner:hover, .leader-btn-inner:focus {
+  color: #fff;
+  background: #b15bf6;
+  box-shadow: inset 0 0 12px 2px rgba(255,255,255,0.7);
+}
+
+.leader-btn-inner.selected {
+  background: #b15bf6;
+  border-color: #d1d5db; /* matches border-gray-300 */
+  color: #fff;
+  box-shadow: inset 0 0 20px 4px rgba(255,255,255,0.3);
+}
+  
