@@ -100,7 +100,7 @@ export const BottomLayout = () => {
                             </div>
 
                             <div className="bg-[#19181d] px-4 py-1 rounded-full">
-                                <div className="text-sm text-purple-500">+150 ▲</div>
+                                <div className="text-sm text-purple-500">+150% ▲</div>
                             </div>
                         </div>
                         <div className="mt-3">
