@@ -5,22 +5,24 @@ import { Link } from "react-router-dom"
 import { cn } from "utils/cn"
 import type { ReactNode } from "react"
 
-export const UpperLayout = () => {
+export const BottomLayout = () => {
 
     const [selectedPath, setSelectedPath] = useState('')
     const [selectedPath2, setSelectedPath2] = useState('')
 
 
     const handleClick = (path: string) => {
-        setSelectedPath(prev => (prev === path ? '' : path)) // toggle
+        setSelectedPath(prev => (prev === path ? '' : path))
     }
 
     const handleClick2 = (path: string) => {
-        setSelectedPath2(prev => (prev === path ? '' : path)) // toggle
+        setSelectedPath2(prev => (prev === path ? '' : path))
     }
+
 
     return <div className="p-[1px] bg-gradient-to-b from-[#1d1c22] to-zinc-900 rounded-xl w-full h-full">
         <div className={cn('w-full h-full bg-[#14111a] flex rounded-xl p-8 overflow-hidden gap-8')}>
+            {/* left */}
             <div className="p-[1px] rounded-[12px] bg-gradient-to-b from-[#1d1c22]  to-transparent w-[28%] overflow-hidden">
                 <div className="rounded-[12px] w-full h-full bg-[#101015] overflow-hidden border border-transparent">
 
@@ -124,6 +126,8 @@ export const UpperLayout = () => {
                     </div>  </div>
             </div>
 
+
+            {/* right */}
             <div className={cn('w-[28%]  rounded-[12px] flex flex-col gap-2')}>
                 <div className="flex justify-end gap-2">
 

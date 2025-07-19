@@ -28,16 +28,6 @@ body {
 
   }
 
-  /* .bgcolor-Home {
-    background: linear-gradient(to bottom, #21182d, #16121f);
-  }
-
-
-  .border-Home {
-    border: 1px solid;
-    border-radius: 5px;
-    border-image: linear-gradient(to right, #8b5cf6, #ec4899) 1;
-  } */
   .bgcolor {
     background: linear-gradient(to bottom, #100e16, #16121f);
   }
