@@ -6,7 +6,7 @@ export const Navbar = () => {
     <div className="flex justify-between items-center w-full bg-[#1d1a29] px-8 py-8 rounded-[11px]">
         <div className="relative flex justify-center items-center text-2xl w-[150px]  bg-pink-800">
   <img src="/images/Logo.png" alt="Logo" className="absolute left-2 max-w-[150px] object-contain" style={{ transform: 'scale(1.2)' }} />
-  <div className="absolute h-[70px] top-[-30px] right-[-50px] border-l border-zinc-800"></div>
+  <div className="absolute h-[70px] top-[-35px] right-[-50px] border-l border-zinc-800"></div>
 
 </div>
 
